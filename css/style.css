@@ -1,8 +1,11 @@
-img{
-  height: 200px;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-header img{
+img{
+  height: 200px;
   display: block;
   margin: 0 auto;
 }
@@ -40,4 +43,67 @@ header{
   text-align: center;
   font-size: 15px;
   margin-bottom: 10px;
+}
+
+.how, .why{
+  margin-top: 100px;
+  background-color: #f9f9f9;
+}
+
+.why img{
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.why [class^="col-"]{
+  margin-top: 60px;
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+  img{
+    height: 100px;
+  }
+
+  .how, .why{
+    margin-top: 50px;
+  }
+
+  .why img{
+    padding: 15px;
+  }
+
+  .why [class^="col-"]{
+    margin-top: 30px;
+  }
+
+  .row-md::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .how .row>.col-md-6{
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:768px){
+  img{
+    height: 100px;
+  }
+
+  .how, .why{
+    margin-top: 50px;
+  }
+
+  .why img{
+    padding: 15px;
+  }
+
+  .why [class^="col-"]{
+    margin-top: 30px;
+  }
 }
