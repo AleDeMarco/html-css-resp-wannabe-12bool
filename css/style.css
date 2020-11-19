@@ -1,0 +1,43 @@
+img{
+  height: 200px;
+}
+
+header img{
+  display: block;
+  margin: 0 auto;
+}
+
+header{
+  margin-top: 50px;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.subtitle{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.text{
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
